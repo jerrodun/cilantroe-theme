@@ -1,0 +1,309 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+h1,h2,h3,h4,h5,h6,p,a {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 span,
+h2 span,
+p span {
+  color: #2d898b;
+  font-weight: 600;
+}
+
+h1 span {
+  font-weight: 800;
+}
+
+html {
+	scroll-behavior: smooth;
+  overflow-x: hidden !important;
+}
+
+body {
+  overflow-x: hidden !important;
+  position: relative
+}
+
+svg.blob {
+  position: absolute;
+  top: -400px;
+  right: -600px;
+  width: 1300px;
+  z-index: 100;
+}
+
+svg.blob.second {
+  position: absolute;
+  left: -500px;
+  width: 800px;
+  z-index: 100;
+  opacity: 50%;
+  top: 0;
+}
+
+header {
+  margin: 35px 0 100px 0;
+  position: relative;
+  z-index: 1000;
+}
+
+.index-section {
+  margin-bottom: 165px;
+  position: relative;
+  z-index: 1000;
+}
+
+.index-section:last-of-type {
+  margin-bottom: 0;
+}
+
+.column,
+.columns {
+  position: relative;
+  z-index: 1000;
+}
+
+header img {
+  width: 180px;
+}
+
+img.bg-shape {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+img.hero-image {
+  width: 100%;
+  box-shadow: 0px 0px 15px #c7c7c7;
+  border-radius: 18px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+p.primary {
+  font-size: 20px;
+}
+ 
+.button {
+  background: #2d898b;
+  border: 2px solid #2d898b;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 600;
+  height: 45px;
+  line-height: 45px;
+}
+
+.button:hover {
+  opacity:
+}
+
+.brands img {
+  height: 50px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.brands h2 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+ul li:before {
+  content: url('../images/check.svg');
+  margin-right: 15px;
+}
+
+ul li p {
+  margin-bottom: 0;
+}
+
+.banner {
+  min-width: 100%;
+  padding: 65px;
+  background: #2d898b;
+  margin:1em -100%; /* old browsers fallback */
+  margin:1em calc(50% - 50vw);
+}
+
+.banner .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner p {
+  font-size: 25px;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 0;
+  width: 75%;
+}
+
+.banner p img {
+  width: 140px;
+  margin-left: 3px;
+}
+
+
+.tab{
+  cursor: pointer;
+  display:inline-block;
+  background: #fff;
+  color: #222;
+  border-radius: 50px;
+  padding: 6px 15px;
+  border: 1px solid #222;
+
+}
+.panels{
+  min-height:200px;
+  width:100%;
+  max-width:500px;
+  border-radius:3px;
+  overflow:hidden;  
+  margin-top: 25px;
+}
+.panel{
+  display:none;
+  animation: fadein .8s;
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.radio{
+  display:none !important;
+}
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel{
+  display:block
+}
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab{
+  background: #222;
+  color: #fff;
+  border-radius: 50px;
+  padding: 6px 15px;
+}
+
+
+.coolBeans {
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+}
+.coolBeans::after {
+  background-color: #FAC9B8;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+.coolBeans:hover::after {
+  transform: translate(0, 0);
+}
+.coolBeans:hover {
+  transform: scale(1.05);
+  will-change: transform;
+  border: 2px solid #FAC9B8;
+  color: #222;
+}
+
+.button.secondary {
+  background: #fff;
+  color: #222;
+  margin-bottom: 0;
+}
+.secondary.coolBeans::after {
+  background-color: #FAC9B8;
+}
+.secondary.coolBeans:hover {
+  border: 2px solid #FAC9B8;
+  color: #222;
+}
+
+
+@media(max-width: 549px) {
+  header {
+    margin: 15px 0 50px 0
+  }
+
+  header img {
+    width: 160px; 
+  }
+
+  img.hero-image {
+    margin-top: 65px;
+  }
+
+  .index-section {
+    margin-bottom: 65px;
+  }
+
+  .brands img { 
+    margin-bottom: 45px;
+  }
+
+  .banner .container {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .banner .container p {
+    margin-bottom: 35px;
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
